@@ -6,12 +6,27 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    class Genre
+    public class Genre
     {
-        public string GenreName { get; set; }
+        private string GenreName;
+        public Genre()
+        {
+            
+        }
         public Genre(string Genre)
         {
             this.GenreName = Genre;
+        }
+        public string Genres
+        {
+            get
+            {
+                return GenreName;
+            }
+            set
+            {
+                GenreName = value;
+            }
         }
     }
 }

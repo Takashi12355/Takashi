@@ -29,68 +29,71 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Composition = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Executor = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Album = new System.Windows.Forms.TextBox();
+            this.CompositionLabel = new System.Windows.Forms.Label();
+            this.CompositionTextBox = new System.Windows.Forms.TextBox();
+            this.ExecutorLabel = new System.Windows.Forms.Label();
+            this.ExecutorTextBox = new System.Windows.Forms.TextBox();
+            this.AlbumLabel = new System.Windows.Forms.Label();
+            this.AlbumTextBox = new System.Windows.Forms.TextBox();
             this.Exit = new System.Windows.Forms.Button();
-            this.AddGanre = new System.Windows.Forms.Button();
-            this.Genre = new System.Windows.Forms.TextBox();
+            this.CompositionAdd = new System.Windows.Forms.Button();
+            this.GenreTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // CompositionLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(36, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Произведение";
+            this.CompositionLabel.AutoSize = true;
+            this.CompositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CompositionLabel.Location = new System.Drawing.Point(36, 9);
+            this.CompositionLabel.Name = "CompositionLabel";
+            this.CompositionLabel.Size = new System.Drawing.Size(121, 20);
+            this.CompositionLabel.TabIndex = 0;
+            this.CompositionLabel.Text = "Произведение";
             // 
-            // Composition
+            // CompositionTextBox
             // 
-            this.Composition.Location = new System.Drawing.Point(12, 33);
-            this.Composition.Name = "Composition";
-            this.Composition.Size = new System.Drawing.Size(166, 20);
-            this.Composition.TabIndex = 1;
+            this.CompositionTextBox.Location = new System.Drawing.Point(12, 33);
+            this.CompositionTextBox.Name = "CompositionTextBox";
+            this.CompositionTextBox.Size = new System.Drawing.Size(166, 20);
+            this.CompositionTextBox.TabIndex = 1;
+            this.CompositionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // ExecutorLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(36, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Исполнитель";
+            this.ExecutorLabel.AutoSize = true;
+            this.ExecutorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExecutorLabel.Location = new System.Drawing.Point(36, 56);
+            this.ExecutorLabel.Name = "ExecutorLabel";
+            this.ExecutorLabel.Size = new System.Drawing.Size(111, 20);
+            this.ExecutorLabel.TabIndex = 2;
+            this.ExecutorLabel.Text = "Исполнитель";
             // 
-            // Executor
+            // ExecutorTextBox
             // 
-            this.Executor.Location = new System.Drawing.Point(12, 79);
-            this.Executor.Name = "Executor";
-            this.Executor.Size = new System.Drawing.Size(166, 20);
-            this.Executor.TabIndex = 3;
+            this.ExecutorTextBox.Location = new System.Drawing.Point(12, 79);
+            this.ExecutorTextBox.Name = "ExecutorTextBox";
+            this.ExecutorTextBox.Size = new System.Drawing.Size(166, 20);
+            this.ExecutorTextBox.TabIndex = 3;
+            this.ExecutorTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // AlbumLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(54, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Альбом";
+            this.AlbumLabel.AutoSize = true;
+            this.AlbumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AlbumLabel.Location = new System.Drawing.Point(54, 102);
+            this.AlbumLabel.Name = "AlbumLabel";
+            this.AlbumLabel.Size = new System.Drawing.Size(68, 20);
+            this.AlbumLabel.TabIndex = 4;
+            this.AlbumLabel.Text = "Альбом";
             // 
-            // Album
+            // AlbumTextBox
             // 
-            this.Album.Location = new System.Drawing.Point(12, 125);
-            this.Album.Name = "Album";
-            this.Album.Size = new System.Drawing.Size(166, 20);
-            this.Album.TabIndex = 5;
+            this.AlbumTextBox.Location = new System.Drawing.Point(12, 125);
+            this.AlbumTextBox.Name = "AlbumTextBox";
+            this.AlbumTextBox.Size = new System.Drawing.Size(166, 20);
+            this.AlbumTextBox.TabIndex = 5;
+            this.AlbumTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Exit
             // 
@@ -100,22 +103,26 @@ namespace WindowsFormsApp1
             this.Exit.TabIndex = 7;
             this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // AddGanre
+            // CompositionAdd
             // 
-            this.AddGanre.Location = new System.Drawing.Point(12, 197);
-            this.AddGanre.Name = "AddGanre";
-            this.AddGanre.Size = new System.Drawing.Size(166, 23);
-            this.AddGanre.TabIndex = 6;
-            this.AddGanre.Text = "Добавить произведение";
-            this.AddGanre.UseVisualStyleBackColor = true;
+            this.CompositionAdd.Location = new System.Drawing.Point(12, 197);
+            this.CompositionAdd.Name = "CompositionAdd";
+            this.CompositionAdd.Size = new System.Drawing.Size(166, 23);
+            this.CompositionAdd.TabIndex = 6;
+            this.CompositionAdd.Text = "Добавить произведение";
+            this.CompositionAdd.UseVisualStyleBackColor = true;
+            this.CompositionAdd.Click += new System.EventHandler(this.CompositionAdd_Click);
             // 
-            // Genre
+            // GenreTextBox
             // 
-            this.Genre.Location = new System.Drawing.Point(12, 171);
-            this.Genre.Name = "Genre";
-            this.Genre.Size = new System.Drawing.Size(166, 20);
-            this.Genre.TabIndex = 9;
+            this.GenreTextBox.Enabled = false;
+            this.GenreTextBox.Location = new System.Drawing.Point(12, 171);
+            this.GenreTextBox.Name = "GenreTextBox";
+            this.GenreTextBox.Size = new System.Drawing.Size(166, 20);
+            this.GenreTextBox.TabIndex = 9;
+            this.GenreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -131,19 +138,20 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 403);
-            this.Controls.Add(this.Genre);
+            this.ClientSize = new System.Drawing.Size(190, 260);
+            this.Controls.Add(this.GenreTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Exit);
-            this.Controls.Add(this.AddGanre);
-            this.Controls.Add(this.Album);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Executor);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Composition);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CompositionAdd);
+            this.Controls.Add(this.AlbumTextBox);
+            this.Controls.Add(this.AlbumLabel);
+            this.Controls.Add(this.ExecutorTextBox);
+            this.Controls.Add(this.ExecutorLabel);
+            this.Controls.Add(this.CompositionTextBox);
+            this.Controls.Add(this.CompositionLabel);
             this.Name = "AddComposition";
-            this.Text = "Form2";
+            this.Text = "Добавление композитора";
+            this.Load += new System.EventHandler(this.AddComposition_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,15 +159,15 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Composition;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Executor;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Album;
+        private System.Windows.Forms.Label CompositionLabel;
+        private System.Windows.Forms.TextBox CompositionTextBox;
+        private System.Windows.Forms.Label ExecutorLabel;
+        private System.Windows.Forms.TextBox ExecutorTextBox;
+        private System.Windows.Forms.Label AlbumLabel;
+        private System.Windows.Forms.TextBox AlbumTextBox;
         private System.Windows.Forms.Button Exit;
-        private System.Windows.Forms.Button AddGanre;
-        private System.Windows.Forms.TextBox Genre;
+        private System.Windows.Forms.Button CompositionAdd;
+        private System.Windows.Forms.TextBox GenreTextBox;
         private System.Windows.Forms.Label label4;
     }
 }

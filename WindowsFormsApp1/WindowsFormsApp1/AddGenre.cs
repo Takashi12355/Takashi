@@ -12,25 +12,22 @@ namespace WindowsFormsApp1
 {
     public partial class AddGenre : Form
     {
-        private DataGridView DGVGenre;
-        private DataGridView DGVCompsition;
-        public AddGenre(DataGridView DGVGenre, DataGridView DGVCompsition)
+        public AddGenre()
         {
             InitializeComponent();
-            this.DGVGenre = DGVGenre;
-            this.DGVCompsition = DGVCompsition;
-            Up();
         }
-        public void Up()
-        {
-          
-        }
-    
 
-        private void AddGanre_Click(object sender, EventArgs e)
+        public  void AddGanre_Click(object sender, EventArgs e) //кнопка отправки названия жанра на главную форму 
         {
-            MusicalWorks.MWP.AddGenre(TextGenre.Text);
-            DGVGenre.RowCount++;
+            if (GenreTextBox.Text != "")
+            {
+                MusicalWorks.MusicalWorksinstance.AddGenre(GenreTextBox.Text);
+                this.Close();
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Внимание, вы не ввели жанр музыки!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -40,6 +37,6 @@ namespace WindowsFormsApp1
             {
                 this.Close();
             }
-        }
+        }//выход из формы с предупреждением 
     }
 }

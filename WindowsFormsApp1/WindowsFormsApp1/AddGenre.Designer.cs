@@ -29,28 +29,29 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.TextGenre = new System.Windows.Forms.TextBox();
+            this.Genrelabel = new System.Windows.Forms.Label();
+            this.GenreTextBox = new System.Windows.Forms.TextBox();
             this.AddGanre = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label2
+            // Genrelabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(28, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Жанр музыки";
+            this.Genrelabel.AutoSize = true;
+            this.Genrelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Genrelabel.Location = new System.Drawing.Point(28, 9);
+            this.Genrelabel.Name = "Genrelabel";
+            this.Genrelabel.Size = new System.Drawing.Size(107, 20);
+            this.Genrelabel.TabIndex = 0;
+            this.Genrelabel.Text = "Жанр музыки";
             // 
-            // TextGenre
+            // GenreTextBox
             // 
-            this.TextGenre.Location = new System.Drawing.Point(12, 32);
-            this.TextGenre.Name = "TextGenre";
-            this.TextGenre.Size = new System.Drawing.Size(141, 20);
-            this.TextGenre.TabIndex = 1;
+            this.GenreTextBox.Location = new System.Drawing.Point(12, 32);
+            this.GenreTextBox.Name = "GenreTextBox";
+            this.GenreTextBox.Size = new System.Drawing.Size(141, 20);
+            this.GenreTextBox.TabIndex = 1;
+            this.GenreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AddGanre
             // 
@@ -77,8 +78,8 @@ namespace WindowsFormsApp1
             this.ClientSize = new System.Drawing.Size(166, 117);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.AddGanre);
-            this.Controls.Add(this.TextGenre);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.GenreTextBox);
+            this.Controls.Add(this.Genrelabel);
             this.Name = "AddGenre";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -89,8 +90,8 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TextGenre;
+        private System.Windows.Forms.Label Genrelabel;
+        private System.Windows.Forms.TextBox GenreTextBox;
         private System.Windows.Forms.Button AddGanre;
         private System.Windows.Forms.Button Exit;
     }
